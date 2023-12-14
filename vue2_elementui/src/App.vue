@@ -4,9 +4,13 @@
     <div>
       <el-button @click="startHacking">element ui 安装成功</el-button>
     </div>
+    <hr>
+    <UserInfo></UserInfo>
   </div>
 </template>
+
 <script>
+import UserInfo from './components/UserInfo'
 export default {
   methods: {
     startHacking () {
@@ -19,7 +23,7 @@ export default {
     }
   },
   components:{
-    // UserInfo
+    UserInfo
   }
 }
 </script>
